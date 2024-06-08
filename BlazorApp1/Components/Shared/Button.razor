@@ -1,0 +1,18 @@
+﻿<div class="row mt-2">
+    <div class="col-lg-6 col-12">
+        <button @onclick="ClickedButton" class="btn btn-success">Click Me</button>
+    </div>
+    <div class="col-lg-6 col-12 border-1 bg-secondary p-2">
+        <span>@text</span>
+    </div>
+
+</div>
+
+@code {
+    string text = string.Empty;
+
+    void ClickedButton()
+    {
+        text = "You have clicked the button";
+    }
+}
